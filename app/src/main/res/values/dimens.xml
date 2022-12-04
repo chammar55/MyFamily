@@ -7,4 +7,5 @@
     <dimen name="dimen_24_sp">24sp</dimen>
     <dimen name="dimen_96_dp">96dp</dimen>
     <dimen name="dimen_0_dp">0dp</dimen>
+    <dimen name="dimen_64_dp">64dp</dimen>
 </resources>

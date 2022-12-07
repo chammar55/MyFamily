@@ -7,37 +7,158 @@
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_180_dp"
-        android:layout_margin="@dimen/dimen_16_dp"
+        android:layout_height="@dimen/dimen_145_dp"
+        android:layout_marginStart="@dimen/dimen_16_dp"
+        android:layout_marginTop="@dimen/dimen_12_dp"
+        android:layout_marginEnd="@dimen/dimen_16_dp"
+        android:layout_marginBottom="@dimen/dimen_12_dp"
         app:cardCornerRadius="@dimen/dimen_16_dp"
-        app:cardElevation="@dimen/dimen_16_dp"
+        app:cardElevation="@dimen/dimen_8_dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/img_user"
-        android:layout_width="@dimen/dimen_64_dp"
-        android:layout_height="@dimen/dimen_64_dp"
-        android:layout_margin="@dimen/dimen_16_dp"
-        android:elevation="@dimen/dimen_16_dp"
-        android:src="@drawable/ic_profile"
-        app:layout_constraintBottom_toBottomOf="@id/card"
-        app:layout_constraintStart_toStartOf="@id/card"
-        app:layout_constraintTop_toTopOf="@id/card" />
 
-    />
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="@dimen/dimen_64_dp"
+            android:layout_height="@dimen/dimen_64_dp"
+            android:layout_margin="@dimen/dimen_16_dp"
+            android:elevation="@dimen/dimen_16_dp"
+            android:src="@drawable/ic_profile"
+            app:layout_constraintBottom_toBottomOf="@id/card"
+            app:layout_constraintStart_toStartOf="@id/card"
+            app:layout_constraintTop_toTopOf="@id/card" />
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dimen_16_dp"
-        android:elevation="@dimen/dimen_16_dp"
-        android:text="Ammar Ibrahim"
-        android:textColor="@color/black"
-        android:textSize="@dimen/dimen_16_sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@id/img_user"
-        app:layout_constraintTop_toTopOf="@id/card" />
+        <ImageView
+            android:id="@+id/img_location"
+            android:layout_width="@dimen/dimen_16_dp"
+            android:layout_height="@dimen/dimen_24_dp"
+            android:layout_marginStart="@dimen/dimen_8_dp"
+            android:elevation="@dimen/dimen_16_dp"
+            android:src="@drawable/ic_location"
+            app:layout_constraintStart_toEndOf="@id/img_user"
+            app:layout_constraintTop_toTopOf="@id/img_user"
+            app:layout_constraintBottom_toBottomOf="@id/img_user"
+            app:tint="@color/guard_green" />
+
+        <TextView
+            android:id="@+id/address_text"
+            android:layout_width="@dimen/dimen_0_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_margin="4dp"
+            android:elevation="@dimen/dimen_16_dp"
+            android:text="9th building, 2nd floor, maldiv road"
+            app:layout_constraintEnd_toEndOf="@id/card"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            app:layout_constraintStart_toEndOf="@id/img_location"
+            app:layout_constraintBottom_toBottomOf="@id/img_user"
+            />
+
+        
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16_dp"
+            android:elevation="@dimen/dimen_16_dp"
+            android:text="Ammar Ibrahim"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_16_sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/img_user"
+            app:layout_constraintTop_toTopOf="@id/card" />
+
+        <ImageView
+            android:id="@+id/img_battery"
+            android:layout_width="@dimen/dimen_24_dp"
+            android:layout_height="@dimen/dimen_24_dp"
+            android:layout_marginStart="@dimen/dimen_8_dp"
+            android:layout_marginTop="@dimen/dimen_16_dp"
+            android:elevation="@dimen/dimen_16_dp"
+            android:src="@drawable/ic_battery"
+            app:layout_constraintStart_toStartOf="@id/img_user"
+            app:layout_constraintTop_toBottomOf="@id/img_user"
+            app:tint="@color/guard_green" />
+
+        <TextView
+            android:id="@+id/battery_persent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:elevation="@dimen/dimen_16_dp"
+            android:text="90%"
+            android:textColor="@color/guard_green"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/img_battery"
+            app:layout_constraintStart_toEndOf="@id/img_battery"
+            app:layout_constraintTop_toTopOf="@id/img_battery" />
+
+        <ImageView
+            android:id="@+id/img_distance"
+            android:layout_width="@dimen/dimen_16_dp"
+            android:layout_height="@dimen/dimen_24_dp"
+            android:layout_marginStart="@dimen/dimen_8_dp"
+            android:layout_marginTop="@dimen/dimen_16_dp"
+            android:elevation="@dimen/dimen_16_dp"
+            android:src="@drawable/ic_send_msg"
+            app:layout_constraintStart_toEndOf="@id/battery_persent"
+            app:layout_constraintTop_toBottomOf="@id/img_user"
+            app:tint="#b197bc" />
+
+        <TextView
+            android:id="@+id/distance_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:elevation="@dimen/dimen_16_dp"
+            android:text="223M"
+            android:textColor="@color/guard_green"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/img_battery"
+            app:layout_constraintStart_toEndOf="@id/img_distance"
+            app:layout_constraintTop_toTopOf="@id/img_battery" />
+
+        <ImageView
+            android:id="@+id/img_wifi"
+            android:layout_width="@dimen/dimen_16_dp"
+            android:layout_height="@dimen/dimen_24_dp"
+            android:layout_marginStart="@dimen/dimen_8_dp"
+            android:layout_marginTop="@dimen/dimen_16_dp"
+            android:elevation="@dimen/dimen_16_dp"
+            android:src="@drawable/ic_wifi"
+            app:layout_constraintStart_toEndOf="@id/distance_text"
+            app:layout_constraintTop_toBottomOf="@id/img_user"
+            app:tint="#b197bc" />
+
+        <TextView
+            android:id="@+id/wifi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:elevation="@dimen/dimen_16_dp"
+            android:text="WIFI"
+            android:textColor="@color/guard_green"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/img_battery"
+            app:layout_constraintStart_toEndOf="@id/img_wifi"
+            app:layout_constraintTop_toTopOf="@id/img_battery" />
+
+        <ImageView
+            android:id="@+id/img_call"
+            android:layout_width="@dimen/dimen_24_dp"
+            android:layout_height="@dimen/dimen_24_dp"
+            android:layout_margin="@dimen/dimen_16_dp"
+            android:layout_marginStart="@dimen/dimen_8_dp"
+            android:layout_marginTop="@dimen/dimen_16_dp"
+            android:elevation="@dimen/dimen_16_dp"
+            android:src="@drawable/ic_call"
+            app:layout_constraintBottom_toBottomOf="@id/img_battery"
+            app:layout_constraintEnd_toEndOf="@id/card"
+            app:layout_constraintTop_toTopOf="@id/img_battery"
+            app:tint="@color/black" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -28,11 +28,10 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val listMembers = listOf<MemberModel>(
-            MemberModel("Ammar"),
-            MemberModel("Umer"),
-            MemberModel("Ans"),
-            MemberModel("Hanan"),
-            MemberModel("Manan"),
+            MemberModel("Ammar","9th building, 2nd floor, maldiv road","90%","220"),
+            MemberModel("Umer","10th building, 3rd floor, maldiv road","80%","210"),
+            MemberModel("Ans","11th building, 4th floor, maldiv road","70%","200"),
+            MemberModel("Hanan","9th building, 2nd floor, maldiv road","60%","190"),
         )
         //Adapter put value in View(MemberAdapter file in myfamily folder)
        // Press CTRL + right click on MemberAdapter below to view view
